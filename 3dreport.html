@@ -8,7 +8,60 @@
 
 <h1 style="text-align:center">4.0 Exploring Water and Oil Data in 3D: Isosurfaces</h1>
 <br>
+<br>
+
+The questions you should try to answer are as follows:
+<ol>
+<li>Is the deepness influence the water saturation or oil’s pressure?
+  <br><font color='red'> Yes, we can see that both for water saturation and oil pressure are affected by deepness.  </font>
+  
+</li>
+
+<li>In what month(s) the water saturation reaches to it maximum?
+<br><font color='red'> Water saturation reaches to it maximum is in Month 158 while it highest average is when Month 599</font>
+</li>
+
+<li>How would you recognise this maximum/minimum  levels?<br><font color='red'>This maximum levels can be recognized using plot data over time filter and choose the enable the maximum in the parameter. However, for precision it is better to view in the spreadsheet view in the paraview.</font></li>
+
+
+</ol>
+
+<u>Step taken for input data</u>
+<ol> 
+<li> At the tool bar selecet file 
+<li> Select open
+<li> Select .vtk file and click ok 
+</ol>
+
+<u>Step to view isosurfaces </u>
+<ol>
+<li> At the pipeline select which dataset we want to add contour
+<li> Click contour at the tool bar as highlighted at the image<br><img src="Capture/contour.PNG" alt="contour" width="300" height="100" align="left"></li><br><br><br><br><br><br>
+<li>At the properties window at Isosurface add value range 25 to make it more clear
+<li> Apply process 1-3 for water saturation, water pressure and oil pressure
+</ol>
+
+<u>Step to view plot data over time </u>
+<ol>
+<li> At the pipeline select which dataset we want to plot data over time
+<li> Right click on the contour pipeline  > Add filter > Data analysis > Plot Data over time
+</ol>
+
+<u>Step to view Volume Rendering </u>
+<ol>
+<li> At the pipeline select which dataset we want
+<li> Then in the properties panel > choose Volume in the Representation Menu drop-down<br><img src="Capture/volume_rendering_panel.JPG" alt="contour" width="400" height="150" align="left"></li><br><br><br><br><br><br>
+
+</ol>
+<br><br>
+
+
+
+<hr>
 <h2>Isosurfaces</h2>
+
+
+
 
 <br>
 <!-- Isosurface -->
